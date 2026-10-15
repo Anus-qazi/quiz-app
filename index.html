@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz_Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="quiz-shell">
+        <header class="quiz-header">
+            <p class="eyebrow">Knowledge check</p>
+            <h1>Quiz Application</h1>
+            <p id="questionNumber">Question 1 of 50</p>
+        </header>
+        <section class="quiz-content" aria-live="polite">
+            <h2 id="question">What is the capital of Pakistan?</h2>
+            <div id="options" class="answer-options"></div>
+            <button id="submit" class="submit-button" type="button">Submit answer</button>
+        </section>
+        <footer class="quiz-footer">
+            <p id="score"></p>
+            <p id="result"></p>
+            <p id="percentage"></p>
+            <p id="restart">Restart Quiz</p>
+            <nav class="question-navigation" aria-label="Question navigation">
+                <button id="previous" class="quiet-button" type="button">Previous</button>
+                <button id="skip" class="quiet-button" type="button">Skip</button>
+                <button id="next" class="next-button" type="button">Next <span aria-hidden="true">→</span></button>
+            </nav>
+        </footer>
+    </main>
+    <script src="quiz_app.js"></script>
+</body>
+</html>
